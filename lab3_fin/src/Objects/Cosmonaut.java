@@ -7,13 +7,15 @@ public class Cosmonaut extends Human implements Property {
 
     private String name;
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
-    public Cosmonaut(String name){
+
+    public Cosmonaut(String name) {
         super(name);
         this.name = name;
     }
+
     @Override
     void think() {
         System.out.print(getName() + "задумался");
@@ -31,6 +33,7 @@ public class Cosmonaut extends Human implements Property {
     @Override
     public void Property(String o) {
         super.name = this.name;
+        super.name = o + super.name;
 
     }
 

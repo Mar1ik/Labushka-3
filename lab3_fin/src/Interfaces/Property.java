@@ -1,5 +1,5 @@
 package Interfaces;
 
 public interface Property {
-    void Property(String o);
+    public void Property(String o);
 }

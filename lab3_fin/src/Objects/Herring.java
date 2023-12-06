@@ -21,6 +21,6 @@ public class Herring extends Human {
 
 
     public void start() {
-        System.out.print(getName() + " Приступила к работе");
+        System.out.print(getName() + " Приступила к работе ");
     }
 }

@@ -14,17 +14,15 @@ public class Zvezdochet extends Human {
         this.name = name;
     }
 
-    @Override
-    void think() {
-
+    public void think() {
+        System.out.print(getName() + " подумал ");
     }
 
-    @Override
     void create() {
 
     }
 
-    void start() {
+    public void start() {
         System.out.print(getName() + " Приступил к работе");
     }
 }

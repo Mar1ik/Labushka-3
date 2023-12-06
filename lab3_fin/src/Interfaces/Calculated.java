@@ -1,5 +1,9 @@
 package Interfaces;
 
+import Objects.*;
+
 public interface Calculated {
-    void calculate();
+    void calculate(StarShip star);
+
+    void calculateWithPeople(Cosmonaut cos);
 }
