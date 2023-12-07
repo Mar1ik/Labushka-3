@@ -50,4 +50,10 @@ public class StarShip extends Rocket implements Calculated, HavePlace {
     public void calculateWithPeople(Cosmonaut cos) {
         System.out.print(getName() + " был рассчитан на " + cos);
     }
+
+    @Override
+    public void cantCalculate(Human human) {
+        System.out.print("Рассчитать " + getName() + " на большее " + human + " было нельзя");
+    }
+
 }

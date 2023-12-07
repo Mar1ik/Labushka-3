@@ -25,4 +25,9 @@ public class Zvezdochet extends Human {
     public void start() {
         System.out.print(getName() + " Приступил к работе");
     }
+
+    @Override
+    void propose() {
+
+    }
 }

@@ -1,18 +1,20 @@
 package Objects;
 
-public class Fuxia extends Human{
+public class Fuxia extends Human {
 
+    private String name;
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
+
     public Fuxia(String name) {
         super(name);
         this.name = name;
     }
 
     public void think() {
-        System.out.print (getName() + " задумался ");
+        System.out.print(getName() + " задумался ");
 
     }
 
@@ -23,5 +25,10 @@ public class Fuxia extends Human{
 
     public void start() {
         System.out.print(getName() + " Приступил к работе");
+    }
+
+    @Override
+    void propose() {
+
     }
 }

@@ -1,17 +1,19 @@
 package Objects;
 
 public class Herring extends Human {
+    private String name;
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
+
     public Herring(String name) {
         super(name);
         this.name = name;
     }
 
     public void think() {
-        System.out.print (getName() + " задумалась ");
+        System.out.print(getName() + " задумалась ");
 
     }
 
@@ -22,5 +24,10 @@ public class Herring extends Human {
 
     public void start() {
         System.out.print(getName() + " Приступила к работе ");
+    }
+
+    @Override
+    void propose() {
+
     }
 }

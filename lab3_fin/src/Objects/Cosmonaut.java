@@ -31,9 +31,13 @@ public class Cosmonaut extends Human implements Property {
     }
 
     @Override
-    public void Property(String o) {
-        super.name = this.name;
-        super.name = o + super.name;
+    void propose() {
+
+    }
+
+    @Override
+    public void property(String o) {
+        this.name = o + " " + this.name;
 
     }
 

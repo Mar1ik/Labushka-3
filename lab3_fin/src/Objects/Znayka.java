@@ -1,19 +1,20 @@
 package Objects;
 
-public class Znayka extends Human{
+public class Znayka extends Human {
 
     private String name;
 
-    String getName(){
-        return this.name;
+    public String getName() {
+        return name;
     }
-    public Znayka(String name){
+
+    public Znayka(String name) {
         super(name);
         this.name = name;
     }
 
     public void think() {
-        System.out.print (getName() + " задумался ");
+        System.out.print(getName() + " задумался ");
 
     }
 
@@ -25,4 +26,15 @@ public class Znayka extends Human{
     public void start() {
         System.out.print(getName() + " Приступил к работе");
     }
+
+    @Override
+    public void propose() {
+        System.out.print(getName() + " предположил ");
+    }
+
+    public void hope() {
+        System.out.print(getName() + " надеялся");
+    }
+
+
 }

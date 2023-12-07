@@ -2,9 +2,10 @@ package Objects;
 
 import Interfaces.ApplyableToHuman;
 import Interfaces.Calculated;
-import Interfaces.Sleep;
+import enums.Controler;
 
 public class All extends Human implements Calculated, ApplyableToHuman {
+    private String name;
 
     public String getName() {
         return this.name;
@@ -30,6 +31,11 @@ public class All extends Human implements Calculated, ApplyableToHuman {
     }
 
     @Override
+    void propose() {
+
+    }
+
+    @Override
     public void sleep() {
         System.out.print(getName() + " не спали ");
     }
@@ -41,6 +47,11 @@ public class All extends Human implements Calculated, ApplyableToHuman {
 
     @Override
     public void calculateWithPeople(Cosmonaut cos) {
+
+    }
+
+    @Override
+    public void cantCalculate(Human human) {
 
     }
 

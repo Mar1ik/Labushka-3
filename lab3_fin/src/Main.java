@@ -1,4 +1,5 @@
 import Objects.*;
+
 public class Main {
     public static void main(String[] args) {
         Znayka znayka = new Znayka("Знайка");
@@ -8,6 +9,13 @@ public class Main {
         Zvezdochet zvezdochet = new Zvezdochet("Звездочет");
         Herring herring = new Herring("Селедочка");
         All all = new All("Все");
+        LastStage lastStage = new LastStage("Последняя ступень");
+        SpaceObject moon = new SpaceObject("Луна");
+        SpaceObject earth = new SpaceObject("Земля");
+
+        Thing moonrock = new Thing("лунный камень");
+        Thing stockpile = new Thing("Запасы");
+
 
         //First
         all.calculate(starShip);
@@ -22,10 +30,34 @@ public class Main {
         //Third
         zvezdochet.think();
         System.out.print(": ");
-        cosmonauts.Property("двеннадцать");
+        cosmonauts.property("двенадцать");
         starShip.calculateWithPeople(cosmonauts);
+        System.out.print(".\n");
+
+        //Fourth
+        starShip.cantCalculate(cosmonauts);
+        lastStage.harder();
+        System.out.print(", ");
+        moonrock.needPlace();
+        System.out.print(", ");
+        stockpile.delivery(moon, earth);
+        System.out.print(".\n");
+
+        //Sixth
+        znayka.propose();
+        lastStage.contain();
 
 
+        //Seventh
+        znayka.hope();
+        System.out.print(", что ");
+        moon.coming();
+        all.find(moonrock);
 
+        //Eithth
+        all.having(moonrock);
+        all.produce();
+        System.out.print(",  который ");
+        all.helpfind();
     }
 }
