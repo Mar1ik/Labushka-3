@@ -26,10 +26,6 @@ public class StarShip extends Rocket implements Calculated, HavePlace {
         System.out.print(getName() + " был спроектирован ");
     }
 
-    public String cosmanauts(String name) {
-        this.name = name;
-        return name;
-    }
 
     @Override
     public String toString() {
