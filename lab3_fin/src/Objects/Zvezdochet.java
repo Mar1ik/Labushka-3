@@ -19,7 +19,7 @@ public class Zvezdochet extends Human {
     }
 
     void create() {
-
+        System.out.print(getName() + " сделал ");
     }
 
     public void start() {

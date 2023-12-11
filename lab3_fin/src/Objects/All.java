@@ -46,12 +46,12 @@ public class All extends Human implements Calculated, ApplyableToHuman {
     }
 
     @Override
-    public void calculateWithPeople(Cosmonaut cos) {
+    public void calculate(Cosmonaut cos) {
 
     }
 
     @Override
-    public void cantCalculate(Human human) {
+    public void calculate(Human human) {
 
     }
 

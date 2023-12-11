@@ -30,12 +30,12 @@ public class Main {
         //Third
         zvezdochet.think();
         System.out.print(": ");
-        cosmonauts.property("двенадцать");
-        starShip.calculateWithPeople(cosmonauts);
+        cosmonauts.setQuantity();
+        starShip.calculate(cosmonauts);
         System.out.print(".\n");
 
         //Fourth
-        starShip.cantCalculate(cosmonauts);
+        starShip.calculate(cosmonauts);
         lastStage.harder();
         System.out.print(", ");
         moonrock.needPlace();
@@ -54,7 +54,7 @@ public class Main {
         moon.coming();
         all.find(moonrock);
 
-        //Eithth
+        //Eiththrr
         all.having(moonrock);
         all.produce();
         System.out.print(",  который ");

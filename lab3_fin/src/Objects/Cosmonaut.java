@@ -1,10 +1,12 @@
 package Objects;
 
-import Interfaces.Property;
+import java.sql.SQLOutput;
+import java.util.Scanner;
 
-public class Cosmonaut extends Human implements Property {
+public class Cosmonaut extends Human {
 
-
+    Scanner scanner = new Scanner(System.in);
+    int quantity = scanner.nextInt();
     private String name;
 
     public String getName() {
@@ -35,14 +37,13 @@ public class Cosmonaut extends Human implements Property {
 
     }
 
-    @Override
-    public void property(String o) {
-        this.name = o + " " + this.name;
-
-    }
 
     @Override
     public String toString() {
         return name;
+    }
+
+    public void setQuantity(){
+        this.name = quantity + " " + this.name;
     }
 }

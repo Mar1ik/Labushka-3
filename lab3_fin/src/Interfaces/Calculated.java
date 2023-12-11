@@ -5,7 +5,7 @@ import Objects.*;
 public interface Calculated {
     void calculate(StarShip star);
 
-    void calculateWithPeople(Cosmonaut cos);
+    void calculate(Cosmonaut cos);
 
-    void cantCalculate(Human human);
+    void calculate(Human human);
 }

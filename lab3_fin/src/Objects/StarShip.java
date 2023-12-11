@@ -37,7 +37,7 @@ public class StarShip extends Rocket implements Calculated, HavePlace {
     }
 
     @Override
-    public void Placement(Cosmonaut cos) {
+    public void placement(Cosmonaut cos) {
         System.out.print("В " + getName() + "вмещается" + cos);
     }
 
@@ -47,13 +47,14 @@ public class StarShip extends Rocket implements Calculated, HavePlace {
     }
 
     @Override
-    public void calculateWithPeople(Cosmonaut cos) {
+    public void calculate(Cosmonaut cos) {
         System.out.print(getName() + " был рассчитан на " + cos);
     }
 
     @Override
-    public void cantCalculate(Human human) {
+    public void calculate(Human human) {
         System.out.print("Рассчитать " + getName() + " на большее " + human + " было нельзя");
     }
+
 
 }
